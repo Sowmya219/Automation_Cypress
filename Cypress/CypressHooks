@@ -1,0 +1,24 @@
+/// <reference types="cypress" />
+describe('MyTest',function(){
+    before(function(){
+        cy.log('***********This is setup block*************')
+    })//before
+    after(function(){
+        cy.log('***********This is exit block*************')
+    })//after
+    beforeEach(function(){
+        cy.log('***********This is Login block*************')
+    })//beforeEach
+    afterEach(function(){
+        cy.log('***********This is Logout block*************')
+    })//afterEach
+    it('Test1',function(){
+        cy.log('***********This is searching test*************') 
+    })//it
+    it('Test2',function(){
+        cy.log('***********This is Learning test*************')
+    })//it
+    it('Test3',function(){
+        cy.log('***********This is Products test*************')
+    })//it
+})//describe
