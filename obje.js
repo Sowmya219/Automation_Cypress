@@ -1,0 +1,41 @@
+//Object Method 1
+var mobileph={
+    Brand:"Vivo",
+    RAM:"8 GB",
+    Andriodver:10.0,
+    Display:6.3
+}
+console.log(mobileph.Brand +" "+ mobileph.RAM +" "+ mobileph.Andriodver +" "+ mobileph.Display);
+//Method 2
+var user=new Object();
+user.name= "Ravi";
+user.id=202021;
+user.acc="Admin";
+console.log(user.name+" "+user.id+" "+user.acc);
+//Method 3
+function emp(name,id,band){
+    this.name=name;
+    this.id=id;
+    this.band=band;
+}
+E=new emp("Sowmya","21140","TRB");
+console.log(E.name+" "+E.id+" "+E.band);
+//Defining Method
+var person={
+    firstname:"Usha",
+    lastname:"patel",
+    height:5.4,
+    color:"white",
+    fullname:function(){
+        console.log(this.firstname+" "+this.lastname);
+    }
+}
+person.fullname();
+var x="Ram";
+var y=new String("Ram");
+console.log(typeof(x));
+console.log(typeof(y));
+var fun = new Function(); 
+console.log(typeof(fun)); 
+
+
