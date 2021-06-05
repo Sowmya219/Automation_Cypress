@@ -1,1 +1,80 @@
-
+/// <reference types="cypress" />
+describe('Opencart',function(){
+     it.('Test',function(){
+         cy.visit('https://demo.opencart.com/')
+         //explicit assertion
+         cy.get('h1',{timeout:20000}).should(($el)=>{
+             expect($el.text()).equal('Your Store')
+         })
+         //implict assertion
+         cy.get('#logo > h1 > a',{timeout:20000}).should('be.visible').and('have.text','Your Store')
+     })//it
+    it('objassertion',()=>{
+        const emp={
+            name:"Sowmya",
+            comp:"Wipro"
+        }
+        assert.isObject(emp,'value is object')
+    })//it
+    it('booleanassertion',()=>{
+        Boolean =true
+        assert.isTrue(Boolean,'value is true')
+    })//it
+    it('equalassertion',()=>{
+        var str1="Sowmya"
+        var str2="Sowmya"
+        var str3="Vandana"
+        var n1=10
+        assert.equal(str1,str2,'value is equal')
+        assert.notEqual(str1,str3,'value is not equal')
+        assert.strictEqual(true,true,'bools strict eq')
+        assert.notStrictEqual(5,'5','not strict eq')
+        assert.isAbove(6,1,'6 greater than 1')
+        assert.isBelow(1,7,'1 is lessthan 7')
+        //15>=10(15-10)
+        assert.isAtLeast(15,10,'15 is greater than or equal to 10')
+        //2<=5(2-5)
+        assert.isAtMost(2,5,'2 lesstahn or equal to 5')
+        assert.isNaN(NaN,'value is not a number')
+        assert.isNotNaN(5,'5 is not NaN')
+        assert.exists(n1,'value is exists')
+        assert.notExists(null,'value is not exsists')
+        assert.isUndefined(undefined,'its undefined')
+        assert.isDefined(str1,'val is defined')
+    })//it
+    it('func',()=>{
+        function add(a,b){
+            return a+b
+        }
+        assert.isFunction(add,'val is function')
+        assert.isNotFunction(1,'val is not a function')
+    })//it
+    it('numassertion',()=>{
+        var n=2
+        var m='Sai'
+        var k=null
+        var l='Hp'
+        var a=[1,2,3]
+        assert.isNumber(n,'value is number')
+        assert.isNotNumber(m,'value is not a number')
+        assert.isNull(k,'value is null')
+        assert.isNotNull(m,'value is not null')
+        assert.typeOf(l,'String','value is a string')
+        assert.isArray(a,'value is Array')
+        assert.isNotArray(n,'val is not array')
+    })//it
+    it('equal sn',()=>{
+        var a=[1,2,3]
+        var b=a
+        assert.deepEqual(a,b,'val a is deep equal to b')
+        //strict equal(==) checks whether the a,b refers to same object,if yes (returns true) else (return false)
+        assert.strictEqual(a,b,'val a is strict equal to b')
+        var c=[1,2,3]
+        var d=[1,2,3]
+        assert.deepEqual(a,b,'val c is deep equal to d')
+        assert.strictEqual(a,b,'val c is strict equal to d')//fail
+        //assert.deepEqual('5',5,'val is deep equal')
+        assert.notStrictEqual('5',5,'val is strict equal')
+        //assert.notDeepEqual('5',5,'val is not deep equal')
+    })//it
+})//describe
