@@ -1,0 +1,47 @@
+//if Statement
+var a=20
+if(a<30)
+{
+console.log("Wipro");
+}
+//if-else
+var x=-2;
+if(x>0)
+{
+console.log("Positive number");
+}
+else
+{
+console.log("Negative number");
+}
+// if..else if
+var  y=20;
+if(y=10)
+{  
+console.log("y is equal to 10");  
+}  
+else if(y=20)
+{  
+console.log("y is equal to 20");  
+}  
+else if(y=25)
+{  
+console.log("y is equal to 25");  
+}  
+else
+{  
+console.log("y is not equal to 10, 25 or 20");  
+}  
+var k=30;
+var r="sowmya";
+if(k===r)
+{
+console.log("k is eql to r");
+}
+else if(k==r)
+{
+console.log("k is not eql to r");
+}
+else{
+console.log("wipro");
+}
