@@ -1,0 +1,12 @@
+/// <reference types="cypress" />
+import * as functions from "./commands.spec"
+
+//import addition from  "./commands.spec"
+describe('Test fun',() => {
+    it('calling func1',() => {
+        
+        cy.log(functions.addition(7, 8))
+        // cy.addition(7,8).should('have.value',15)
+        //cy.wrap({ad:addition}).invoke('ad', 7, 8).should('have.value',15)  
+    })//it
+})//describe
