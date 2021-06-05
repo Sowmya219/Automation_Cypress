@@ -1,6 +1,0 @@
-var msg="Hello World!";
-//console.log(msg);
-var a=10;
-console.log(a);
-var x="Sowmya"+[a,b,c];
-console.log(x);
