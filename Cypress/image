@@ -1,0 +1,12 @@
+/// <reference types="cypress" />
+describe('Myimg',function(){
+    it('Mysrc',function(){
+        cy.visit(Cypress.env('url'))
+        cy.get('#content > div.row > div:nth-child(1) > div > div.caption > h4 > a').click()
+        cy.get('#content > div > div.col-sm-8 > ul.thumbnails > li:nth-child(1) > a > img').should('have.attr','alt','MacBook')
+        cy.get('#content > div > div.col-sm-8 > ul.thumbnails > li:nth-child(2) > a > img').should('have.attr','alt','MacBook')
+        cy.get('#content > div > div.col-sm-8 > ul.thumbnails > li:nth-child(3) > a > img').should('have.attr','alt','MacBook')
+        cy.get('#content > div > div.col-sm-8 > ul.thumbnails > li:nth-child(4) > a > img').should('have.attr','alt','MacBook')
+        cy.get('#content > div > div.col-sm-8 > ul.thumbnails > li:nth-child(5) > a > img').should('have.attr','alt','MacBook')
+    })//it
+})//describe
