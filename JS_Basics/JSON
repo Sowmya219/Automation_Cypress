@@ -22,3 +22,5 @@ console.log(data.hobby); // { gaming: false, reading: true, sport: "football"}
 
 console.log(data.hobby.sport); // football
 console.log(data.class[1]); // HTML
+
+console.log(data)
