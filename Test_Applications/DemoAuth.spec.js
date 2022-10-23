@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 var address='#basicBootstrapForm > div:nth-child(2) > div > textarea'
 var listbox1='#basicBootstrapForm > div:nth-child(7) > div > multi-select > div:nth-child(2) > ul'
 describe('Automation testing',() => {
