@@ -35,5 +35,6 @@ describe('Tools QA',()=>{
         cy.get(State).type('NCR')
         cy.get(State).type('{enter}')
         cy.get('#submit').should('be.enabled').click()
+        cy.log('hihello')
     })//it
 })//describe
