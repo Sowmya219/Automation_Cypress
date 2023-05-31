@@ -1,0 +1,22 @@
+ {
+  "p-claims-deny": {},
+  "sub": "diptesh.patil@hp.com",
+  "p-app": "paladin-portal",
+  "iss": "urn:paladin:jwt:policy",
+  "p-default-p": "paladin-api",
+  "p-env": "dev",
+  "p-logout-url": "https://paladin-portal-dev.corp.hpicloud.net/login",
+  "p-claims-allow": {
+    "x-hasura-default-role": "paladin_admin",
+    "x-hasura-allowed-roles": ["paladin_admin", "user"],
+    "x-hasura-user-id": "eabb45bb-45da-437f-baca-7dc9e14c4fd2",
+    "x-hasura-tenant-id": "ecbb95bf-b9ed-45ee-8cdf-4cc7d1a7a70c"
+  },
+  "p-uname": "Diptesh Patil",
+  "aud": "paladin-portal",
+  "p-sub-id": "eabb45bb-45da-437f-baca-7dc9e14c4fd2",
+  "p-tenant": "ecbb95bf-b9ed-45ee-8cdf-4cc7d1a7a70c",
+  "p-email": "diptesh.patil@hp.com"
+}
+
+
